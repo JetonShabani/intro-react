@@ -2,6 +2,7 @@ import React from "react";
 import Table from "./Table";
 import List from "./List";
 
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -79,7 +80,7 @@ class App extends React.Component {
     }
 
     /* Uncomment lines below to render grades*/
-    /*if (this.state.buttonClicked === "grades") {
+    if (this.state.buttonClicked === "grades") {
       tabChoice = (
         <Table
           tableNames={this.state.assignments}
@@ -88,7 +89,7 @@ class App extends React.Component {
           data={this.state.grades}
         />
       );
-    }*/
+    }
 
     return (
       <div>
